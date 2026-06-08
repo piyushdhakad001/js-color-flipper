@@ -18,5 +18,7 @@ buttonElement.addEventListener("click", () => {
   bodyElement.style.backgroundColor = color;
   console.log(bodyElement.style.backgroundColor);
 
+  backgroundColorTextElement.innerHTML = `Background-color: ${color}`;
+
   
 });
