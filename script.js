@@ -12,13 +12,21 @@ const backgroundColorTextElement = document.querySelector(
   ".js-background-color-text",
 );
 
+const savedColor = localStorage.getItem('bgColor');
+if(savedColor){
+  bodyElement.style.backgroundColor = savedColor;
 
-buttonElement.addEventListener("click", () => {
+  backgroundColorTextElement.innerHTML = `Background-color: ${savedColor}`;
+}
+
+
+buttonElement.addEventListener("click", (clickColor) => {
   const color = `${getRandomRgbColor()}`;
   bodyElement.style.backgroundColor = color;
-  console.log(bodyElement.style.backgroundColor);
 
   backgroundColorTextElement.innerHTML = `Background-color: ${color}`;
-
   
+  localStorage.setItem('bgColor', color);
 });
+
+
