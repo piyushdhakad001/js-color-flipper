@@ -54,9 +54,11 @@ body {
   /* font-size: x-large;
   font-weight: bolder; */
   border-radius: 7px;
-  border: none;
   margin-top: 40px;
   font: inherit;
+  /* border: none;
+  outline: none; */
+  border: none;
 }
 
 @media (max-width: 600px) {
