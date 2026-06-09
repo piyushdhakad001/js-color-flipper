@@ -5,7 +5,6 @@
   font-family: sans-serif;
 }
 
-
 body {
   background: rgb(152, 212, 193);
 }
@@ -20,10 +19,7 @@ body {
   height: 150px;
   background: #100000;
   font-size: xx-large;
-  
-  
 }
-
 
 .theme-box {
   width: 100%;
@@ -33,14 +29,10 @@ body {
   align-items: center;
   font-size: x-large;
   font-weight: bolder;
-  
 }
 
 .background-color-text {
   background: black;
- 
-  /* font-size: x-large;
-  font-weight: bolder; */
   padding: 30px 50px;
   margin-top: 70px;
   border-radius: 10px;
@@ -48,31 +40,26 @@ body {
 }
 
 .click-button {
-  
   background: black;
   padding: 20px 30px;
-  /* font-size: x-large;
-  font-weight: bolder; */
   border-radius: 7px;
   margin-top: 40px;
   font: inherit;
-  /* border: none;
-  outline: none; */
   border: none;
 }
 
 @media (max-width: 600px) {
-  .theme-box{
+  .theme-box {
     font-size: small;
     font-weight: bolder;
   }
-  .background-color-text, .click-button{
+  .background-color-text,
+  .click-button {
     padding: 20px 20px;
   }
-  
+
   .header {
     height: 150px;
     font-size: medium;
   }
-  
 }
